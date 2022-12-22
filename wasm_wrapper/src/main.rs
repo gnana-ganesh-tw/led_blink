@@ -1,5 +1,11 @@
+#![no_std]
 use wasm3::Environment;
 use wasm3::Module;
+
+#[panic_handler]
+fn handle_panic(_: &core::panic::PanicInfo) -> ! {
+    unreachable!()
+}
 
 fn main() {
     let env = Environment::new().expect("Unable to create environment");
