@@ -1,4 +1,4 @@
-# Rust wasm to blink LED
+# Rust wasm 
 
 ### Pre-requisites
 
